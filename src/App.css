@@ -3,3 +3,21 @@
   margin: 30px;
   font-size: 30px;
 }
+
+.App .header img {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.App footer {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.App footer img {
+  display: inline;
+  height: 30px;
+  position: relative;
+  top: 6px;
+}
