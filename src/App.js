@@ -16,9 +16,10 @@ export default function App() {
         <Dictionary />
         <footer className="text-center">
           {" "}
-          Coded by <img src={theasullivan} /> and <img src={opensource} /> on{" "}
+          Coded by <img src={theasullivan} alt="Thea Sullivan" /> and{" "}
+          <img src={opensource} alt="Open Source" /> on{" "}
           <a href="https://github.com/TheacSully/react-dictionary-app">
-            <img src={github} />{" "}
+            <img src={github} alt="Github link" />{" "}
           </a>
         </footer>
       </div>
