@@ -6,18 +6,24 @@ import searchlogo from "./searchlogo.png";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
-  let [results, setResults] = useState(null);
+  let [results, setResults] = useState("");
 
   function handleResponse(response) {
-    //console.log(response.data.meanings[0].definition);
-    setResults(response.data.meanings[0]);
+    setResults(response.data[0]);
   }
+  //function handleResponse(response) {
+  //console.log(response.data.meanings[0].definition);
+  //setResults(response.data.meanings[0].definition);
+  //setResults("fishing");
+  //console.log(results);
+  //}
 
   function search(event) {
     event.preventDefault();
     //alert(`searching for definition of "${keyword}"`);
-    let apiKey = "ct90a4732c5fd752o670f2a66b23ca38";
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    //let apiKey = "ct90a4732c5fd752o670f2a66b23ca38";
+    // let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
