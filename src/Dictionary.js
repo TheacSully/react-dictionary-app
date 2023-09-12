@@ -7,7 +7,6 @@ import searchlogo from "./searchlogo.png";
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState("");
-
   function handleResponse(response) {
     setResults(response.data[0]);
   }
