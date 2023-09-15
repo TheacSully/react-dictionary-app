@@ -31,12 +31,21 @@ export default function Dictionary() {
   }
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="search" onChange={handleKeywordChange} />
-        <button>
-          <img src={searchlogo} alt="search logo" />
-        </button>
-      </form>
+      <section>
+        <form onSubmit={search}>
+          <input
+            type="search"
+            onChange={handleKeywordChange}
+            placeholder="Type a word"
+          />
+          <button>
+            <img src={searchlogo} alt="search logo" />
+          </button>
+        </form>
+        <div className="hint">
+          Suggested Words: Bears, Beets or Battlestar Galactica
+        </div>
+      </section>
       <Results results={results} />
     </div>
   );

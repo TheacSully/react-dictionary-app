@@ -1,0 +1,13 @@
+.Phonetic img {
+  width: 30px;
+  margin-left: 10px;
+  transition: ease-in-out;
+  margin-right: 15px;
+  margin-top: 15px;
+  position: relative;
+  top: 3px;
+}
+
+.Results img:hover {
+  opacity: 80%;
+}

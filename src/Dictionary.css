@@ -1,6 +1,16 @@
 .Dictionary {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+.Dictionary section {
+  display: block;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  max-width: 80%;
 }
 
 .Dictionary img {
@@ -11,7 +21,7 @@
 button {
   position: relative;
   top: 6px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 5px;
   border: none;
   transition: all 200ms ease-in-out;
@@ -20,4 +30,11 @@ button {
 button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.Dictionary .hint {
+  font-size: 10px;
+  position: relative;
+  left: -4px;
+  margin-top: 3px;
 }

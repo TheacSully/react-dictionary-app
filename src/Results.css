@@ -1,0 +1,14 @@
+.Results section {
+  display: block;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  max-width: 80%;
+  text-align: left;
+}
+
+.Results h2 {
+  font-size: 32px;
+}

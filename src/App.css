@@ -1,3 +1,10 @@
+body {
+  background-image: url("paper-texture.jpg");
+  opacity: 80%;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
 .App {
   text-align: center;
   margin: 30px;
