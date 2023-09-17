@@ -1,7 +1,7 @@
 body {
   background-image: url("paper-texture.jpg");
   opacity: 80%;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: repeat;
 }
 
@@ -11,7 +11,7 @@ body {
   font-size: 30px;
 }
 
-.App .header img {
+.App .App-header img {
   display: block;
   margin: 0 auto;
   width: 350px;
@@ -27,4 +27,10 @@ body {
   height: 30px;
   position: relative;
   top: 6px;
+}
+
+@media (max-width: 900px) {
+  .App .App-header img {
+    width: 250px;
+  }
 }

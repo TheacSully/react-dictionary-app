@@ -5,11 +5,6 @@ import "./Results.css";
 
 export default function Results(props) {
   if (props.results) {
-    //console.log("What does props contain?  : ");
-    // console.log(typeof props);
-    // const resultsArray = Object.values(props.results);
-    //console.log("What does resultsArray contain?  : ");
-    //console.log(typeof resultsArray);
     return (
       <div className="Results">
         <section>
@@ -22,15 +17,13 @@ export default function Results(props) {
             );
           })}
         </section>
-        <section>
-          {props.results.meanings.map(function (meaning, index) {
-            return (
-              <div key={index}>
-                <Meaning meaning={meaning} />
-              </div>
-            );
-          })}
-        </section>
+        {props.results.meanings.map(function (meaning, index) {
+          return (
+            <section className="Meanings" key={index}>
+              <Meaning meaning={meaning} />
+            </section>
+          );
+        })}
       </div>
     );
   } else {

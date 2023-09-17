@@ -8,12 +8,14 @@ import Dictionary from "./Dictionary";
 
 export default function App() {
   return (
-    <div className="container">
-      <div className="App">
-        <header className="header">
-          <img src={dictionaryHead} alt="dictionary logo" />
+    <div className="App">
+      <div className="container">
+        <header className="App-header">
+          <img src={dictionaryHead} alt="logo" />
         </header>
-        <Dictionary />
+        <main>
+          <Dictionary defaultKeyword="coffee" />
+        </main>
         <footer className="text-center">
           {" "}
           Coded by <img src={theasullivan} alt="Thea Sullivan" /> and{" "}

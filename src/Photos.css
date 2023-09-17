@@ -1,0 +1,9 @@
+.Photos img {
+  border-radius: 5px;
+  width: auto;
+}
+
+.Photos .row {
+  max-width: 100%;
+  margin: 0 auto;
+}
